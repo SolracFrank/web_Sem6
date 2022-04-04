@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <meta charset="UTF-8">
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <style>
+        body{
+            background: url(./Images/fondo.png);
+            background-size: cover;
+        }
+        .login{
+            margin-top: 200px; 
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col l4 offset-l4 m6 offset-m3 s12">
+                    <div class="card login">
+                        <div class="card-title pink white-text center-align">
+                            Iniciar Sesión
+                        </div>
+                        <div class="card-content">
+                            <form action="login.php" method="post">
+                                <div class="form-field">
+                                    <label class="white-text" for="nombreUsuario">Usuario</label>
+                                    <input name="txtUser" class="white-text" type="text" id="nombreUsuario">
+                                </div>
+                                <div class="form-field">
+                                    <label class="white-text" for="pass">Contraseña</label>
+                                    <input name="txtPass" class="white-text" type="password" id="pass">
+                                </div>
+                                <div class="form-field center-align">
+                                    <input class="btn pink" type="submit" value="LOG IN">
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+  </html>

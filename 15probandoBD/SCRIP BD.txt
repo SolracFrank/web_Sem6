@@ -1,0 +1,9 @@
+DROP DATABASE if exists login;
+CREATE DATABASE login;
+USE login;
+CREATE TABLE usuarios(
+iduser int primary key auto_increment,
+Nombre VARCHAR(50),
+Contrasena VARCHAR(50));
+
+INSERT INTO usuarios VALUES(null,'Carlos','1234');
